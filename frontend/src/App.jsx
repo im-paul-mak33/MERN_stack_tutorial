@@ -1,10 +1,11 @@
 // import libraries
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // component imports
-import Register from "./pages/Register";
-import Login from "./pages/Login";
+import Register from './pages/Register';
+import Login from './pages/Login';
+import Dashboard from './pages/Dashboard';
 
 // utilities imports
 
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Register />} />
           <Route path='/Login' element={<Login />} />
+          <Route path='/Dashboard' element={<Dashboard />} />
         </Routes>
       </Router>
     </div>
